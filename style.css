@@ -18,14 +18,14 @@ body {
 .sidebar {
     background: linear-gradient(to right, #000000, #021b38);
     color: #fff;
-    width: 20%; /* Adjust the width as needed */
+    min-width: 200px; /* Set a minimum width for the sidebar */
     padding: 20px;
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box;
+    font-size: 16px; /* Atur ukuran font untuk sidebar */
 }
-
 .profile img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -107,10 +107,22 @@ body {
 }
 
 footer {
-    background-color: #575757;
-    color: #fff;
+    background: linear-gradient(to right, #ffffff, #5f7896);
+    color: #000000;
     text-align: center;
     width: 100%;
     padding: 2px;
     box-sizing: border-box; /* Include padding and border in the width */
-}
+    }
+    .sidebar h1 {
+        font-size: 20px; /* Atur ukuran font untuk elemen h1 di dalam sidebar */
+    }
+    
+    .sidebar p {
+        font-size: 14px; /* Atur ukuran font untuk elemen p di dalam sidebar */
+    }
+    
+    .menu a {
+        font-size: 16px; /* Atur ukuran font untuk tautan di dalam menu */
+    }
+
