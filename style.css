@@ -125,4 +125,24 @@ footer {
     .menu a {
         font-size: 16px; /* Atur ukuran font untuk tautan di dalam menu */
     }
-
+    @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Ubah menjadi tata letak kolom pada layar kecil */
+        }
+    
+        .sidebar {
+            display: none; /* Sembunyikan sidebar pada layar kecil */
+        }
+    
+        .menu {
+            width: 100%; /* Ambil lebar penuh pada layar kecil */
+        }
+    
+        .content {
+            width: 100%; /* Ambil lebar penuh pada layar kecil */
+        }
+    
+        .project {
+            width: 100%; /* Ambil lebar penuh pada layar kecil */
+        }
+    }
