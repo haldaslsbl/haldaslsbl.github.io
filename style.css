@@ -6,22 +6,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use min-height instead of height */
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
-    width: 100%; /* Set width to 100% */
-    min-height: 100vh; /* Use min-height instead of height */
+    width: 100%;
+    min-height: 100vh;
 }
 
 .sidebar {
     background: linear-gradient(to right, #000000, #021b38);
     color: #fff;
-    min-width: 200px; /* Set a minimum width for the sidebar */
+    min-width: 200px;
     padding: 20px;
     box-sizing: border-box;
-    font-size: 16px; /* Atur ukuran font untuk sidebar */
+    font-size: 16px;
 }
 .profile img {
     width: 120px;
@@ -108,7 +108,7 @@ body {
 
 footer {
     background: linear-gradient(to right, #ffffff, #5f7896);
-    color: #000000;
+    color: #fff;
     text-align: center;
     width: 100%;
     padding: 2px;
@@ -125,24 +125,31 @@ footer {
     .menu a {
         font-size: 16px; /* Atur ukuran font untuk tautan di dalam menu */
     }
-    @media screen and (max-width: 768px) {
+
+    .menu {
+        flex: 1; /* Ambil sisa ruang */
+    }
+    
+    .content {
+        flex: 2; /* Ambil dua kali lipat ruang dibandingkan menu */
+        padding: 10px;
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #fff;
+    }
+    
+    .project {
+        padding: 10px;
+        color: #fff;
+    }
+    @media (max-width: 768px) {
         .container {
-            flex-direction: column; /* Ubah menjadi tata letak kolom pada layar kecil */
+            flex-direction: column;
         }
     
-        .sidebar {
-            display: none; /* Sembunyikan sidebar pada layar kecil */
-        }
-    
-        .menu {
-            width: 100%; /* Ambil lebar penuh pada layar kecil */
-        }
-    
-        .content {
-            width: 100%; /* Ambil lebar penuh pada layar kecil */
-        }
-    
+        .sidebar,
+        .menu,
+        .content,
         .project {
-            width: 100%; /* Ambil lebar penuh pada layar kecil */
+            width: 100%;
         }
     }
