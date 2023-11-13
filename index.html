@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a356fc26bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="transparent lineDown" id="nav">
+            <div class="icon" id="menu-icon">
+                <i class="fa fa-bars" id="menu-dropdown" onclick="menuIcon()"></i>
+            </div>
+            <ul>
+                <li><a href="#home" id="menu1">Home</a></li>
+                <li><a href="#about" id="menu2">About</a></li>
+                <li><a href="#portfolio" id="menu4">Portfolio</a></li>
+                <li><a href="#contact" id="menu5">Contact</a></li>
+            </ul>
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <span class="slider round fa-solid fa-moon"></span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <div class="home-wrapper" id="home">
+            <div class="typewriter" id="typewriter">
+                <img src="assets/images/haldaicon3.png" alt="Halda Salsabila" class="profile-picture">
+                <h1>Halda Salsabila</h1>
+            </div>
+        </div>
+        <div class="about-wrapper" id="about">
+            <h2 class="heading transparent lineUp1">About Me</h2>
+            <div class="transparent lineUp2">
+                <div class="card width-about" id="card-about">
+                    <div class="about">
+                        <p>Saya adalah seorang mahasiswa yang sedang menjalani studi di Fakultas Teknik, Program Studi Teknik Informatika
+                            di Universitas Perjuangan, angkatan 2021.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-wrapper" id="portfolio">
+            <h2 class="heading transparent lineUp5">Project</h2>
+            <div class="transparent lineUp6">
+                <div class="card width-portfolio" id="card-portfolio-1">
+                    <div class="portfolio">
+                        <img src="assets/images/project1.jpeg" alt="Instalasi Sistem Operasi Kali OpenBSD">
+                        <h3>Project 1</h3>
+                        <h3>Membuat Vidio Tutorial Instalasi Sistem Operasi Kali OpenBSD.</h3>
+                        <a href="https://www.youtube.com/@haldasalsabila71" class="font-link-portfolio">
+                            <span class="fa-solid fa-arrow-up-right-from-square" id="logo-portfolio-1"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card width-portfolio" id="card-portfolio-2">
+                    <div class="portfolio">
+                        <img src="Content Coming Soon.jpeg" alt="">
+                        <h3>Project 2</h3>
+                        <h3>Content</h3>
+                        <a href="https://www.youtube.com/@haldasalsabila71" class="font-link-portfolio">
+                            <span class="fa-solid fa-arrow-up-right-from-square" id="logo-portfolio-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card width-portfolio" id="card-portfolio-3">
+                    <div class="portfolio">
+                        <img src="Content Coming Soon.jpeg" alt="">
+                        <h3>Project 3</h3>
+                        <h3>Content</h3>
+                        <a href="https://www.youtube.com/@haldasalsabila71" class="font-link-portfolio">
+                            <span class="fa-solid fa-arrow-up-right-from-square" id="logo-portfolio-3"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-wrapper" id="contact">
+            <h2 class="heading transparent lineUp7">Contact</h2>
+            <div class="transparent lineUp8">
+                <div class="card width-contact" id="card-contact-1">
+                    <div class="contact">
+                        <a href="mailto:haldaslsbl@gmail.com?subject=Judul Pesan&body=Isi Pesan" class="font-link-contact">
+                            <span class="fa-solid fa-envelope" id="logo-contact-1"></span>  
+                        </a>
+                    </div>
+                </div>
+                <div class="card width-contact" id="card-contact-2">
+                    <div class="contact">
+                        <a href="https://wa.me/6285320438508" class="font-link-contact">
+                            <span class="fa-brands fa-whatsapp" id="logo-contact-2"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card width-contact" id="card-contact-3">
+                    <div class="contact">
+                        <a href="https://www.instagram.com/haldssbila/" class="font-link-contact">
+                            <span class="fa-brands fa-instagram" id="logo-contact-3"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="transparent lineUp9" id="foot">
+        <p id="foot-text">&#169; <script>document.write(new Date().getFullYear())</script> Halda Salsabila</p>
+    </footer>
+</body>
+</html>
