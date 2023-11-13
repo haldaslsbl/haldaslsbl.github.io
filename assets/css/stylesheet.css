@@ -218,6 +218,7 @@ nav label{
 .portfolio p{
   height: 228px;
   overflow: auto;
+  font-size: 15px;
 }
 
 .portfolio span:hover {
